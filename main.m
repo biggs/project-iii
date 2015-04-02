@@ -1,8 +1,8 @@
 addpath('define_dipoles','fringes','animations','classes','responses','applied_field') %add stuff to path
 
 %----------DEFINE_DIPOLES we are using-----------
-dipoles = calc_lin_dip_def(5,1/16);	%no, Gamma
-G_x = calc_nn_gx(5, 0.3, 0);			%no, coupling, is there endcoupling
+dipoles = calc_lin_dip_def(2,1/16);	%no, Gamma
+G_x = calc_nn_gx(2, 0.3, 0);			%no, coupling, is there endcoupling
 
 
 %---------calculate the APPLIED_FIELD from 2 sources------------ 
@@ -20,3 +20,5 @@ no_source = class_source([128,128i],[0,0]);
 
 
 %fringes
+
+external_field
