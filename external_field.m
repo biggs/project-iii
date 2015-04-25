@@ -2,9 +2,10 @@
 %first do in circle, all circ pol
 
 sources = [];
-theta_step = (2*pi-1)/ 4;
+theta_step = 0.2;
+theta_max = 0.6;
 
-for theta = 0:theta_step:2*pi-0.01  % make sure no overlapping
+for theta = 0:theta_step:theta_max  % make sure no overlapping
 	sources = [sources, class_source(3*[cos(theta),sin(theta)], 0.1*[1,-i])];
 end
 
@@ -36,13 +37,19 @@ H_ext = G_src * M_src;
 
 s = diag(S); % make a vect of diagonal S vals
 k = sum(s> 1e-9); % number of non-zero s entries (always first k)
-H_ext_dual= (U(:, 1: k)* diag(1./ s(1: k))* V(:, 1: k)')';
-
-H_ext_dual
-pinv(H_ext)
+H_ext_dual= (U(:, 1: k)* diag(1./ s(1: k))* V(:, 1: k)'); %ie conj transpose of pinv
 
 
-%H_ext_dual = U * pinv(S) * V';
+H_ext_dual' * H_ext
+H_ext * H_ext_dual'
+
+
+
+
+
+
+
+
 
 
 
