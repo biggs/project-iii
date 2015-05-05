@@ -2,6 +2,7 @@
 omega = 1.2;	%set an omega to work with - pretty arbitrary
 
 M = calc_M(omega, calc_X(omega,dipoles), G_x);  %calc response matrix for sys
+
 [V,D] = eig(M);  %find eigval/vect - columns of V are vectors
 
 %output the physical V and D (half the size):
@@ -22,6 +23,6 @@ for h_no = 1:size(eigenvect(:,1))/2
 	peak = [peak, fminbnd(@(w) - calc_power(w,G_x,dipoles,h_plot), 0,2)];
 end
 
-hold off;
+%hold off;
 
 legend(num2str(peak', 'p=%f'));
