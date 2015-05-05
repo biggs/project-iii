@@ -1079,8 +1079,11 @@ Responses
 
 \begin_layout Standard
 Henceforth, all calculations were done in the basis with the fields or moments
- at the dipole locations unless otherwise stated, and we also set our units
- such that 
+ at the dipole locations with 
+\begin_inset Formula ${\bf H}^{ext(0)}=1$
+\end_inset
+
+ unless otherwise stated, and we also set our units such that 
 \begin_inset Formula $\mu_{0}=1$
 \end_inset
 
@@ -1134,7 +1137,11 @@ reference "eq:calcm"
 \end_layout
 
 \begin_layout Enumerate
-Calculate the dipole scattering matrix G_dip using (
+Calculate the dipole scattering matrix 
+\begin_inset Formula $\mathrm{G^{dip}}$
+\end_inset
+
+ using (
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "eq:magnetostatic"
@@ -1214,6 +1221,10 @@ reference "eq:checkpower"
 \end_inset
 
 ) (note this piece of code is out of date????).
+\end_layout
+
+\begin_layout Standard
+Unless otherwise stated, we generally
 \end_layout
 
 \begin_layout Subsection

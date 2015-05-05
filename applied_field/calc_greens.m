@@ -3,9 +3,9 @@ function h_at_2 = calc_greens( h_at_1, r1, r2)
 
 	R = r2 - r1;
 
-	R_n = norm(R)
+	R_n = norm(R);
 
-	G = (3*(R*R.')/(R_n^2) - eye(2)) / (R_n^3)
+	G = (3*(R*R.')/(R_n^2) - eye(2)) / (R_n^3);
 
 	h_at_2 = G*h_at_1;
 

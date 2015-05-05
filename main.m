@@ -21,10 +21,9 @@ h_sources = calc_ss_h(calc_he(dipoles,sources,0));
 
 
 %---------run scripts to look at stuff------------
-figure; fplot(@(w) calc_power(w,G_x,dipoles,h_sources,1), [0,2]);  %freq response
+%figure; fplot(@(w) calc_power(w,G_x,dipoles,h_sources,1), [0,2]);  %freq response
 
-figure; fplot(@(he0) calc_power(0.9,G_x,dipoles,h_sources,he0), [0,2]);  %FMR (vary w gives interesting results)
+%figure; fplot(@(he0) calc_power(0.9,G_x,dipoles,h_sources,he0), [0,2]);  %FMR (vary w gives interesting results)
 
-
-
+%figure; eigenvalues(calc_L(1.2,1, G_x, dipoles),G_x, dipoles, [0,2])  % plot the eigenvalues of response matrix
 
