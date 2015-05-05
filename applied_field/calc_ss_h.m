@@ -1,5 +1,5 @@
 function [ h_ss ] = calc_ss_h( h )
-%CALC_SS_H Calculate the steady state equivalent of a given h
+%CALC_SS_H Calculate the soley positive going equivalent of a given h
 
 	h_ss = [];
 	h = h.';

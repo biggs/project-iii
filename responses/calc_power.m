@@ -1,11 +1,10 @@
-function p = calc_power(w, G_x, dipoles, h)
+function p = calc_power(w, G_x, dipoles, h, he0)
+
+	%he0 = 1;
+
 
 	%calculate response matrix, M:
-	X = calc_X(w,dipoles);
-
-	xi = inv(inv(X) - G_x);
-
-	M = 0.25*w*( -1i*xi + (-1i*xi)');
+	L = calc_L( w, he0, G_x, dipoles );
 
 
 	%calculate applied field matrix, C:
@@ -13,5 +12,5 @@ function p = calc_power(w, G_x, dipoles, h)
 
 	%calculate power, p
 	%(real part, only as small calc uncert => matlab warnings)
-	p = real(trace(C*M));
+	p = real(trace(C*L));
 end

@@ -11,4 +11,3 @@ function [ power ] = calc_expected_1dip_power( w, w_0, gamma, h )
 	power = prefact*matrix;
 
 end
-

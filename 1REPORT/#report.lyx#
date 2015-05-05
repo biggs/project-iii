@@ -219,8 +219,8 @@ ding to opposite rotation directions) and
 \begin_inset Formula $\alpha_{j}$
 \end_inset
 
- is a damping coefficient (in FMR, for the transverse components of the
- dynamic part of the magnetization).
+ is a phenomological damping coefficient (in FMR, for the transverse components
+ of the dynamic part of the magnetization).
  This equation could be generalized to a Bloch equation with different longitudi
 nal and transverse dampings but this will not be done to simplify the analysis.
 \end_layout
@@ -244,7 +244,7 @@ We move to the steady state by writing
 \begin_inset Formula $\mathrm{{\bf m_{j}}}^{(0)}=m^{s}\hat{{\bf k}}$
 \end_inset
 
- , and 
+ (the saturated magnetisation), and 
 \begin_inset Formula ${\bf H}^{tot(0)}\equiv H^{0}\hat{{\bf k}}\approx{\bf H}^{ext(0)}$
 \end_inset
 
@@ -503,9 +503,9 @@ P(\nu)=\frac{\omega}{2}\mu_{0}\mathrm{Im}\varint_{V}{\bf H}^{*}({\bf r})\cdot{\b
 \begin_layout Standard
 For our system of dipoles we thus find a power absorption:
 \begin_inset Formula 
-\[
-P(\nu)=\sum_{j}\frac{\gamma_{j}\mu_{0}^{2}m_{j}^{s}}{2}\left[\frac{\omega\Gamma_{j}}{\omega^{2}(\frac{\omega_{0j}^{2}}{\omega^{2}}-1)^{2}+\Gamma_{j}^{2}}\right]\times{\bf H}_{j}^{tot(1)*}\cdot\overline{\overline{{\bf S}_{j}}}\cdot{\bf H}_{j}^{tot(1)}
-\]
+\begin{equation}
+P(\nu)=\sum_{j}\frac{\gamma_{j}\mu_{0}^{2}m_{j}^{s}}{2}\left[\frac{\omega\Gamma_{j}}{\omega^{2}(\frac{\omega_{0j}^{2}}{\omega^{2}}-1)^{2}+\Gamma_{j}^{2}}\right]\times{\bf H}_{j}^{tot(1)*}\cdot\overline{\overline{{\bf S}_{j}}}\cdot{\bf H}_{j}^{tot(1)}\label{eq:checkpower}
+\end{equation}
 
 \end_inset
 
@@ -590,7 +590,7 @@ After a number of steps from the above forms for the power we may arrive
  an ensemble of systems (not required for coherent sources), is:
 \begin_inset Formula 
 \begin{equation}
-\overline{\overline{{\bf C}}}({\bf r},{\bf r'})=<{\bf H}({\bf r}){\bf H}^{*}({\bf r'})>
+\overline{\overline{{\bf C}}}({\bf r},{\bf r'})=<{\bf H}({\bf r}){\bf H}^{*}({\bf r'})>\label{eq:calcC}
 \end{equation}
 
 \end_inset
@@ -796,7 +796,7 @@ P=\frac{\omega}{2}\mu_{0}(\mathrm{h^{tot}})^{\dagger}\chi^{R}\mathrm{h^{tot}}=\f
 
 \begin_inset Formula 
 \begin{equation}
-<P>=\mathrm{Tr}\left[\mathrm{C^{ext}L}\right]
+<P>=\mathrm{Tr}\left[\mathrm{C^{ext}L}\right]\label{eq:calcpower}
 \end{equation}
 
 \end_inset
@@ -1061,6 +1061,14 @@ The whole process may be done using incremental SVD, where each new measurement
  increases information until all degrees of freedom are found.
 \end_layout
 
+\begin_layout Subsubsection*
+Coherence
+\end_layout
+
+\begin_layout Standard
+Say something about coherence lengths and volumes and the visibility????
+\end_layout
+
 \begin_layout Section
 Modeling
 \end_layout
@@ -1070,11 +1078,26 @@ Responses
 \end_layout
 
 \begin_layout Standard
-All calculations are done in the basis with the fields or moments at the
- dipoles unless otherwise stated.
- The desired dipole system was chosen (generalised fuctions to perform the
- following steps for linear and circular systems of dipoles were created).
- For a given system the following steps were done:
+Henceforth, all calculations were done in the basis with the fields or moments
+ at the dipole locations unless otherwise stated, and we also set our units
+ such that 
+\begin_inset Formula $\mu_{0}=1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+A given dipole system is described by an array of dipoles, each specified
+ in terms of 
+\begin_inset Formula ${\bf r}_{j},\alpha_{j},\gamma_{j},m_{j}^{s}$
+\end_inset
+
+ (generalised fuctions to create linear and circular such systems were made).
+\end_layout
+
+\begin_layout Standard
+For a given system the response matrix was calculated as follows:
 \end_layout
 
 \begin_layout Enumerate
@@ -1136,24 +1159,98 @@ reference "eq:calcL"
 \end_layout
 
 \begin_layout Standard
-Note that the matricies depend on the frequency of excitation and 
+Note that the matricies depend on the frequency of excitation, and the applied
+ static field.
 \end_layout
 
 \begin_layout Standard
-Next the response to a given set of sources was found:
+Now the absorbed power for a given set of sources was found:
+\end_layout
+
+\begin_layout Enumerate
+Calculate the external field at each dipole from the sources using the Greens
+ Function as a matrix (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:magnetostatic"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Enumerate
+Calculate the magnetic correlation matrix 
+\begin_inset Formula $\mathrm{C^{ext}}$
+\end_inset
+
+ (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:calcC"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Enumerate
+Calculate the absorped power (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:calcpower"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+The absorped powers from some simple systems were then checked against (
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:checkpower"
+
+\end_inset
+
+) (note this piece of code is out of date????).
+\end_layout
+
+\begin_layout Subsection
+Reconstruction with EAI
+\end_layout
+
+\begin_layout Standard
+Next, to reconstruct the responses, we:
+\end_layout
+
+\begin_layout Enumerate
+Assemble the source matrix ????
+\end_layout
+
+\begin_layout Subsection
+Further investigation of systems
+\end_layout
+
+\begin_layout Standard
+We may do a number of things to investigate the system further.
 \end_layout
 
 \begin_layout Section
 Results and Discussion
 \end_layout
 
-\begin_layout Subsection
-General Dipole Systems
-\end_layout
-
 \begin_layout Standard
 Ferromagnetic resonance first, then scan source frequency, then show different
  source locations, then fringes, then coherence lengths/volumes
+\end_layout
+
+\begin_layout Subsection
+FMR and Scanning Source Frequency
+\end_layout
+
+\begin_layout Standard
+
 \end_layout
 
 \begin_layout Subsection

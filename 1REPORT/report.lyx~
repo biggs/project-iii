@@ -219,8 +219,8 @@ ding to opposite rotation directions) and
 \begin_inset Formula $\alpha_{j}$
 \end_inset
 
- is a damping coefficient (in FMR, for the transverse components of the
- dynamic part of the magnetization).
+ is a phenomological damping coefficient (in FMR, for the transverse components
+ of the dynamic part of the magnetization).
  This equation could be generalized to a Bloch equation with different longitudi
 nal and transverse dampings but this will not be done to simplify the analysis.
 \end_layout
@@ -244,7 +244,7 @@ We move to the steady state by writing
 \begin_inset Formula $\mathrm{{\bf m_{j}}}^{(0)}=m^{s}\hat{{\bf k}}$
 \end_inset
 
- , and 
+ (the saturated magnetisation), and 
 \begin_inset Formula ${\bf H}^{tot(0)}\equiv H^{0}\hat{{\bf k}}\approx{\bf H}^{ext(0)}$
 \end_inset
 
@@ -271,7 +271,7 @@ We use periodic RF sources so that
 \begin_inset Formula ${\bf H}_{j}^{tot\,(t)}={\bf H}_{j}^{tot\,(1)}e^{-i\omega t}$
 \end_inset
 
-.
+ (or real part????).
  Substituting into LLG and discarding non-linear terms (effectively the
  approximation 
 \begin_inset Formula ${\bf m_{j}}\cdot{\bf \hat{k}}\approx{\bf m_{j}}^{(0)}$
@@ -1078,16 +1078,26 @@ Responses
 \end_layout
 
 \begin_layout Standard
-Henceforth all calculations are done in the basis with the fields or moments
+Henceforth, all calculations were done in the basis with the fields or moments
  at the dipole locations unless otherwise stated, and we also set our units
  such that 
 \begin_inset Formula $\mu_{0}=1$
 \end_inset
 
 .
- The desired dipole system was chosen (generalised fuctions to perform the
- following steps for linear and circular systems of dipoles were created).
- For a given system the following steps were done:
+\end_layout
+
+\begin_layout Standard
+A given dipole system is described by an array of dipoles, each specified
+ in terms of 
+\begin_inset Formula ${\bf r}_{j},\alpha_{j},\gamma_{j},m_{j}^{s}$
+\end_inset
+
+ (generalised fuctions to create linear and circular such systems were made).
+\end_layout
+
+\begin_layout Standard
+For a given system the response matrix was calculated as follows:
 \end_layout
 
 \begin_layout Enumerate
@@ -1149,7 +1159,7 @@ reference "eq:calcL"
 \end_layout
 
 \begin_layout Standard
-Note that the matricies depend on the frequency of excitation and the applied
+Note that the matricies depend on the frequency of excitation, and the applied
  static field.
 \end_layout
 
@@ -1203,7 +1213,7 @@ reference "eq:checkpower"
 
 \end_inset
 
-).
+) (note this piece of code is out of date????).
 \end_layout
 
 \begin_layout Subsection
@@ -1230,13 +1240,13 @@ We may do a number of things to investigate the system further.
 Results and Discussion
 \end_layout
 
-\begin_layout Subsection
-General Dipole Systems
-\end_layout
-
 \begin_layout Standard
 Ferromagnetic resonance first, then scan source frequency, then show different
  source locations, then fringes, then coherence lengths/volumes
+\end_layout
+
+\begin_layout Subsection
+FMR and Scanning Source Frequency
 \end_layout
 
 \begin_layout Subsection

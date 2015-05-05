@@ -2,8 +2,8 @@ classdef class_source
     %SOURCE This describes a source
     
     properties
-    	posit
-    	orient
+    	posit = [128,128];
+    	orient = [0,0];
 
     end
     

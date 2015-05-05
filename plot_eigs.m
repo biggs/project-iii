@@ -19,8 +19,8 @@ peak = [];
 
 for h_no = 1:size(eigenvect(:,1))/2
 	h_plot = calc_ss_h(eigenvect(:,h_no));
-	fplot(@(w) calc_power(w,G_x,dipoles,h_plot) + 0,   [0,2]);		%add h_no on in a hack to see differences
-	peak = [peak, fminbnd(@(w) - calc_power(w,G_x,dipoles,h_plot), 0,2)];
+	fplot(@(w) calc_power(w,G_x,dipoles,h_plot,1) + 0,   [0,2]);		%add h_no on in a hack to see differences
+	peak = [peak, fminbnd(@(w) - calc_power(w,G_x,dipoles,h_plot,1), 0,2)];
 end
 
 %hold off;
