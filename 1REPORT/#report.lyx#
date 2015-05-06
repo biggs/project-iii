@@ -1600,29 +1600,36 @@ Ferromagnetic resonance first, then scan source frequency, then show different
 FMR and Scanning Source Frequency
 \end_layout
 
-\begin_layout Subsubsection*
+\begin_layout Subsection
 Two Dipole System
 \end_layout
 
+\begin_layout Subsubsection*
+Frequency Response
+\end_layout
+
 \begin_layout Standard
-Firstly we consider the system where there are two dipoles on the x axis,
- spaced 
+Firstly we consider the system with two dipoles on the x axis, spaced 
 \begin_inset Formula $0.8$
 \end_inset
 
- apart and each with a natural frequency of precession 
+ apart with and each with a natural frequency of precession 
 \begin_inset Formula $\omega_{0}=1$
 \end_inset
 
 , magnetisation 
-\begin_inset Formula $m_{s}=1$
+\begin_inset Formula $\mu_{0}m_{s}=1$
 \end_inset
 
 , and damping 
 \begin_inset Formula $\Gamma=1/16$
 \end_inset
 
- at the applied field strength.
+ at an applied field strength of 
+\begin_inset Formula $\mu_{0}H^{(0)}=1$
+\end_inset
+
+.
  They were driven in the steady state by a single, circularly polarised
  source at 
 \begin_inset Formula $x=y=2$
@@ -1638,7 +1645,7 @@ Firstly we consider the system where there are two dipoles on the x axis,
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -1655,16 +1662,16 @@ status open
 
 \begin_layout Plain Layout
 Total power absorption (arb.
- units) as a function of frequency for two identical dipoles 
+ units) as a function of frequency (
+\begin_inset Formula $\omega/\omega_{0}$
+\end_inset
+
+) for two identical dipoles 
 \begin_inset Formula $0.8$
 \end_inset
 
  apart with 
-\begin_inset Formula $\omega_{0}=1$
-\end_inset
-
-, and 
-\begin_inset Formula $\Gamma=1/16$
+\begin_inset Formula $\Gamma=\omega_{0}/16$
 \end_inset
 
 .
@@ -1693,7 +1700,96 @@ Total power absorption (arb.
  of dipoles in opposite directions at any given time, still rotating in
  natural precession direction, higher frequency mode).
  The peaks of the modes are moved by the value of the coupling constant
- away from the 
+ away from the natural frequency 
+\begin_inset Formula $\omega_{0}$
+\end_inset
+
+, but they still have the same widths.
+ Note at this source location the in phase mode is more absorbant at its
+ resonant frequency.
+\end_layout
+
+\begin_layout Standard
+Another interesting effect (not shown) is found when the coupling coefficient
+ is very large 
+\begin_inset Formula $J\rightarrow1$
+\end_inset
+
+.
+ The maximum power absorbances drops to low values as the dipoles effectively
+ screen each other - for the antiphase mode the dipoles almost cancel each
+ other out, and for the in phase, the peak frequency is very low and hence
+ has low absorbance.
+\end_layout
+
+\begin_layout Subsubsection*
+FMR
+\end_layout
+
+\begin_layout Standard
+Now we consider the above system with 
+\begin_inset Formula $J=0.4$
+\end_inset
+
+, but instead of changing the excitation source frequency we sweep the applied
+ magnetic field (using the fundamental dipole properties 
+\begin_inset Formula $\gamma=1,\alpha=1/32$
+\end_inset
+
+).
+ This done with the same source but at two different frequencies shown,
+ 
+\begin_inset Formula $\omega=0.8,1.1$
+\end_inset
+
+.
+ 
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename figs/2dipfmr.png
+	scale 35
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Total power absorption (arb.
+ units) as a function of applied static field for two identical dipoles
+ 0.8 apart, with 
+\begin_inset Formula $\gamma=1,\alpha=1/32$
+\end_inset
+
+.
+ The excitations are provided by sources at 
+\begin_inset Formula $\omega=0.8,1.1$
+\end_inset
+
+ (red, blue).
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+Here we see the behavior we expect - the splitting sizes are the same and
+ the peaks occur at 
 \end_layout
 
 \begin_layout Subsection
