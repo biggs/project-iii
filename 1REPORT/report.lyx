@@ -1606,7 +1606,89 @@ Two Dipole System
 
 \begin_layout Standard
 Firstly we consider the system where there are two dipoles on the x axis,
- spaced
+ spaced 
+\begin_inset Formula $0.8$
+\end_inset
+
+ apart and each with a natural frequency of precession 
+\begin_inset Formula $\omega_{0}=1$
+\end_inset
+
+, magnetisation 
+\begin_inset Formula $m_{s}=1$
+\end_inset
+
+, and damping 
+\begin_inset Formula $\Gamma=1/16$
+\end_inset
+
+ at the applied field strength.
+ They were driven in the steady state by a single, circularly polarised
+ source at 
+\begin_inset Formula $x=y=2$
+\end_inset
+
+ so as to excite in-phase and anti-phase modes.
+ We show the resonant coupling as a function of frequency for three different
+ exchange couplings, 
+\begin_inset Formula $J=0.001,\,0.1,\,0.4$
+\end_inset
+
+.
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename figs/2dip_couplings.png
+	scale 35
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Total power absorption (arb.
+ units) as a function of frequency for two identical dipoles 
+\begin_inset Formula $0.8$
+\end_inset
+
+ apart with 
+\begin_inset Formula $\omega_{0}=1$
+\end_inset
+
+, and 
+\begin_inset Formula $\Gamma=1/16$
+\end_inset
+
+.
+ Lines correspond to exchange couplings 
+\begin_inset Formula $J=0.001,\,0.1,\,0.4$
+\end_inset
+
+ (blue, red, green).
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ We see that in the case of very weak coupling (
+\begin_inset Formula $J=0.001$
+\end_inset
+
+) the dipoles behave as degenerate independent dipoles with a single lorenzian
+ response, peak at 1 and width 1/16.
+ With 
 \end_layout
 
 \begin_layout Subsection
