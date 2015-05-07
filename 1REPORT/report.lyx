@@ -69,7 +69,7 @@
 \begin_body
 
 \begin_layout Title
-Exploring the Dynamical Behaviour of Spin Waves Through Energy-Absorption
+Exploring the Dynamical Behavior of Spin Waves Through Energy-Absorption
  Interferometry
 \end_layout
 
@@ -78,11 +78,15 @@ Felix Biggs
 \end_layout
 
 \begin_layout Abstract
-Energy absorbtion interferometry can be used to find the natural dynamical
+Energy absorption interferometry can be used to find the natural dynamical
  modes of a system of interacting magnetic dipoles, using only measurements
  of total absorbed power.
+ This is of enormous utility in the investigation of magnetic properties
+ of nanoscale and thin-film systems, areas of great technological significance
+ and contemporary research interest, due to their use in magnetic storage
+ media and spintronic devices.
  Previously used to investigate interacting electric dipoles, it is a general
- technique based on the physics of partially coherent energy absorbtion
+ technique based on the physics of partially coherent energy absorption
  
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -90,11 +94,15 @@ key "stafford-elec"
 
 \end_inset
 
-, and theoretically applied to systems of interacting magnetic dipoles.
- Simulations based on the discrete dipole approximation (DDA) are shown
- illustrating this in practice and are used to explore the complex and fascinati
-ng world of spin waves and spintronic devices.
- more??????
+, and has been theoretically shown applicable to systems of interacting
+ magnetic dipoles.
+ Here simulations based on the discrete dipole approximation (DDA) are shown,
+ illustrating this in practice, comparing it to other techniques such as
+ Ferromagnetic Resonance (FMR), and to demonstrate some of the properties
+ of such systems.
+ Experimental realization requires only scannable phase locked sources and
+ an ability to measure absorbed power, simple requirements which make the
+ method highly practicable at a range of frequencies.
 \end_layout
 
 \begin_layout Section
@@ -107,7 +115,7 @@ Magnetic properties of thin films are an active area of research both for
  their enormous technological importance in computing
 \begin_inset CommandInset citation
 LatexCommand cite
-key "key-1"
+key "spinw"
 
 \end_inset
 
@@ -146,9 +154,9 @@ Spin Waves
 \begin_layout Standard
 Fundamentally, magnetism arises from the Pauli exclusion principle coupling
  electron orbitals to spin states.
- This exchange interaction can be phenomologically wirtten by treating atoms
- as directly coupled dipoles, or as a mean field in the rigid band model
- of metals 
+ This exchange interaction can be phenomenologically written by treating
+ atoms as directly coupled dipoles, or as a mean field in the rigid band
+ model of metals 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "thinfilm"
@@ -174,7 +182,7 @@ key "memos"
 
 .
  Their spectrum is highly dependent on the intrinsic system properties and
- can yeild useful information about g-factors, saturization magnetisation
+ can yield useful information about g-factors, saturation magnetization
  and exchange couplings 
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -272,16 +280,16 @@ key "thinfilm"
 \end_layout
 
 \begin_layout Standard
-Ferromagnetic resonance, one of the most useful contempary techniques, is
- at microwave frequencies similar in principle to nuclear spin resonance
+Ferromagnetic resonance, one of the most useful contemporary techniques,
+ is at microwave frequencies similar in principle to nuclear spin resonance
  (NMR).
  In a strong applied magnetic field spins precess and transverse radio frequency
- (RF) energy is abosorbed dependent on the relation between precession and
+ (RF) energy is absorbed dependent on the relation between precession and
  applied frequencies.
  The field strength is varied and absorbances to the small RF probe are
  measured.
  In a ferromagnetic sample, the transverse susceptibility is large and the
- strong exchange coupling tends to supress dipolar contributions so resonance
+ strong exchange coupling tends to suppress dipolar contributions so resonance
  lines may be quite sharp 
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -290,7 +298,7 @@ key "kittel"
 \end_inset
 
 .
- It gives useful information about dispertion and damping but is difficult
+ It gives useful information about dispersion and damping but is difficult
  to apply to microscopic structures and provides little information about
  the modes responsible for absorption 
 \begin_inset CommandInset citation
@@ -330,7 +338,7 @@ The general setup is similar to FMR, with the structure under test placed
 , using which the technique is able to reconstruct the dynamical modes and
  their relative responsivities.
  Furthermore, the technique may be repeated for a range of applied field
- strengths, yeilding a huge amount of useful information about the system.
+ strengths, yielding a huge amount of useful information about the system.
  Degenerate excitation may be found, giving information about system symmetries.
 \end_layout
 
@@ -348,7 +356,7 @@ key "stafford-elec"
 \end_layout
 
 \begin_layout Subsection
-In Practice
+Experimental Realization
 \end_layout
 
 \begin_layout Standard
@@ -406,7 +414,14 @@ Schematic of a possible experimental apparatus for performing EAI.
 \end_layout
 
 \begin_layout Section
-Theory
+Theory 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "memos"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -414,14 +429,7 @@ Spin Waves
 \end_layout
 
 \begin_layout Standard
-We shall model the system as a discrete system of magnetic dipoles 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "memos"
-
-\end_inset
-
-.
+We shall model the system as a discrete system of magnetic dipoles.
  This may be done for any system using the discrete dipole approximation
  (DDA) - the equation then represents averages over finite macroscopic regions.
  A single dipole with magnetic dipole moment 
@@ -815,7 +823,7 @@ After a number of steps from the above forms for the power we may arrive
 \begin_inset Formula $\overline{\overline{\boldsymbol{\chi}}}$
 \end_inset
 
- (this makes the power real and discards the non-absorping hermitan part
+ (this makes the power real and discards the non-absorbing hermitan part
  of 
 \begin_inset Formula $\overline{\overline{\boldsymbol{\chi}}}$
 \end_inset
@@ -1311,9 +1319,9 @@ The dual vectors are defined by
 \end_inset
 
  which correctly accounts for numbers of source positions and sample points.
- If the basis is complete, or overcomplete, the final relation will equal
+ If the basis is complete, or over-complete, the final relation will equal
  the identity.
- If it is undercomplete, the modes are projected onto a measurement space,
+ If it is under-complete, the modes are projected onto a measurement space,
  a filter is applied (which may be impossible to get rid of due to noise)
  and then the modes are reconstructed.
 \end_layout
@@ -1582,48 +1590,81 @@ Further investigation of systems
 \end_layout
 
 \begin_layout Standard
-We may do a number of things to investigate the system further.
- ???
+A number of other possibilities for probing system properties were investigated:
+\end_layout
+
+\begin_layout Itemize
+The frequency response to a single source at a number of possible positions
+ and orientations.
+\end_layout
+
+\begin_layout Itemize
+FMR: the response as the magnetic field is swept for a number of possible
+ single fixed frequency sources.
+\end_layout
+
+\begin_layout Itemize
+Absorbance as a function of position for a single source (swept along a
+ line or in a circle).
+\end_layout
+
+\begin_layout Standard
+System properties were elucidated via:
+\end_layout
+
+\begin_layout Itemize
+Diagonalisation of response matrix and examination of the eigenvectors correspon
+ding to normal modes.
+\end_layout
+
+\begin_layout Itemize
+Frequency-power response to direct excitation of those normal modes.
+\end_layout
+
+\begin_layout Itemize
+Creation of `movies' with plotted arrows rotating at the phases for a particular
+ excitation and for normal modes.
+\end_layout
+
+\begin_layout Itemize
+Plots of magnetic field strength across the plane for various modes.
 \end_layout
 
 \begin_layout Section
 Results and Discussion
 \end_layout
 
-\begin_layout Standard
-Ferromagnetic resonance first, then scan source frequency, then show different
- source locations, then fringes, then coherence lengths/volumes (put in
- unfinished plots first then make better when everything checked???)
-\end_layout
-
 \begin_layout Subsection
-FMR and Scanning Source Frequency
-\end_layout
-
-\begin_layout Subsubsection*
 Two Dipole System
 \end_layout
 
+\begin_layout Subsubsection*
+Frequency Response
+\end_layout
+
 \begin_layout Standard
-Firstly we consider the system where there are two dipoles on the x axis,
- spaced 
+Firstly we consider the system with two dipoles on the x axis, spaced 
 \begin_inset Formula $0.8$
 \end_inset
 
- apart and each with a natural frequency of precession 
+ apart with and each with a natural frequency of precession 
 \begin_inset Formula $\omega_{0}=1$
 \end_inset
 
-, magnetisation 
-\begin_inset Formula $m_{s}=1$
+, magnetization 
+\begin_inset Formula $\mu_{0}m_{s}=1$
 \end_inset
 
 , and damping 
 \begin_inset Formula $\Gamma=1/16$
 \end_inset
 
- at the applied field strength.
- They were driven in the steady state by a single, circularly polarised
+ at an applied field strength of 
+\begin_inset Formula $\mu_{0}H^{(0)}=1$
+\end_inset
+
+.
+ They were driven in the steady state by a single, circularly polarized
  source at 
 \begin_inset Formula $x=y=2$
 \end_inset
@@ -1636,6 +1677,7 @@ Firstly we consider the system where there are two dipoles on the x axis,
 
 .
 \begin_inset Float figure
+placement h
 wide false
 sideways false
 status open
@@ -1655,16 +1697,16 @@ status open
 
 \begin_layout Plain Layout
 Total power absorption (arb.
- units) as a function of frequency for two identical dipoles 
+ units) as a function of frequency (
+\begin_inset Formula $\omega/\omega_{0}$
+\end_inset
+
+) for two identical dipoles 
 \begin_inset Formula $0.8$
 \end_inset
 
  apart with 
-\begin_inset Formula $\omega_{0}=1$
-\end_inset
-
-, and 
-\begin_inset Formula $\Gamma=1/16$
+\begin_inset Formula $\Gamma=\omega_{0}/16$
 \end_inset
 
 .
@@ -1682,37 +1724,186 @@ Total power absorption (arb.
 
 \end_inset
 
- We see that in the case of very weak coupling (
+ 
+\end_layout
+
+\begin_layout Standard
+We see that in the case of very weak coupling (
 \begin_inset Formula $J=0.001$
 \end_inset
 
 ) the dipoles behave as degenerate independent dipoles with a single lorenzian
  response, peak at 1 and width 1/16.
- With 
+ When the exchange couplings are increased we see the system split into
+ two modes, in phase (lower frequency peak) and anti-phase (transverse component
+s of dipoles in opposite directions at any given time, still rotating in
+ natural precession direction at applied frequency, higher frequency mode).
+ The peaks of the modes are moved by the value of the coupling constant
+ away from the natural frequency 
+\begin_inset Formula $\omega_{0}$
+\end_inset
+
+, but they still have the same widths.
+ Note at this source location the in phase mode is more absorbent at its
+ resonant frequency.
+\end_layout
+
+\begin_layout Standard
+Another interesting effect (not shown) is found when the coupling coefficient
+ is very large 
+\begin_inset Formula $J\rightarrow1$
+\end_inset
+
+.
+ The maximum power absorbances drops to low values as the dipoles effectively
+ screen each other - for the anti-phase mode the dipoles almost cancel each
+ other out, and for the in phase, the peak frequency is very low and hence
+ has low absorbance.
+\end_layout
+
+\begin_layout Subsubsection*
+FMR
+\end_layout
+
+\begin_layout Standard
+Now we consider the above system with 
+\begin_inset Formula $J=0.4$
+\end_inset
+
+, but instead of changing the excitation source frequency we sweep the applied
+ magnetic field (using the fundamental dipole properties 
+\begin_inset Formula $\gamma=1,\alpha=1/32$
+\end_inset
+
+).
+ This done with the same source but at two different frequencies shown,
+ 
+\begin_inset Formula $\omega=0.8,1.1$
+\end_inset
+
+.
+ 
+\begin_inset Float figure
+placement h
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename figs/2dipfmr.png
+	scale 35
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Total power absorption (arb.
+ units) as a function of applied static field for two identical dipoles
+ 0.8 apart, with 
+\begin_inset Formula $\gamma=1,\alpha=1/32$
+\end_inset
+
+.
+ The excitations are provided by sources at 
+\begin_inset Formula $\omega=0.8,1.1$
+\end_inset
+
+ (red, blue).
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Here we see the behavior we expect - the splitting sizes are the same and
+ the peaks occur etc ???
+\end_layout
+
+\begin_layout Subsubsection*
+Fringes and Coherence Lengths/Volumes
+\end_layout
+
+\begin_layout Subsubsection*
+Reconstruction, Eigenvectors and Spatial Field Strengths
 \end_layout
 
 \begin_layout Subsection
-Fringes
+Linear Systems
+\end_layout
+
+\begin_layout Standard
+Probably easier to do first as fewer degeneracies.
 \end_layout
 
 \begin_layout Subsection
-EAI Reconstruction
+Circular Systems
 \end_layout
 
-\begin_layout Subsection
-Separate Modes
+\begin_layout Standard
+A few more complicated circular systems (3, 4, 5?)
 \end_layout
 
 \begin_layout Section
 Conclusion
 \end_layout
 
+\begin_layout Standard
+A general system was created to simulate the responses of various possible
+ systems of magnetic dipoles, including dipoles arranged in a circle and
+ in a line, and sources to excite them.
+\end_layout
+
+\begin_layout Standard
+Using this it was shown that only a pair of scannable phase locked sources
+ are needed to reconstruct these responses.
+ Using knowledge of the free space forms of the applied magnetic field these
+ responses were mapped back onto the spatial distribution of dipoles, yeilding
+ useful information about the system.
+ This is potentially of great experimental value.
+ To show this, it was demonstrated that it is comparitively difficult to
+ extract such information using more widely used methods, such as ferromagnetic
+ resonance or scanning a single souce across a line.
+\end_layout
+
+\begin_layout Standard
+The properties of such systems were then explored, also serving as a useful
+ test on the validity of the simulations.
+ This was done by plotting frequency responses to, and magnetic field space
+ distributions from, direct excitations of the normal modes.
+ It was found that they behaved as theoretically predicted and a number
+ of points about physical interpretation of the model, for example in the
+ non-steady state opposite precession direction modes.
+ The results were interpreted in light of the geometry of the samples and
+ source configurations and symmetry-induced degeneracies were looked at.
+ This is particularly interesting as such degeneracies cannot be detected
+ via the other methods.
+\end_layout
+
 \begin_layout Section*
 Appendix
 \end_layout
 
-\begin_layout Subsubsection*
-Notation and Dyadics
+\begin_layout Standard
+
+\series bold
+Notation:
 \end_layout
 
 \begin_layout Standard
@@ -1747,8 +1938,12 @@ Matrix representations:
 
 \end_layout
 
+\begin_layout Subsection*
+A Typical Piece of Code
+\end_layout
+
 \begin_layout Standard
-Dyadics are outer products of vectors ?????
+This is a typical piece of code.
 \end_layout
 
 \begin_layout Bibliography
@@ -1758,17 +1953,25 @@ key "memos"
 
 \end_inset
 
-Unpublised Memos - Stafford Withington
+Unpublished Memos - Stafford Withington
 \end_layout
 
 \begin_layout Bibliography
 \begin_inset CommandInset bibitem
 LatexCommand bibitem
-key "key-1"
+key "spinw"
 
 \end_inset
 
-http://journals.aps.org/prl/abstract/10.1103/PhysRevLett.112.127202#fulltext
+Standing Spin Waves in Ultrathin Magnetic Films: A Method to Test for Layer-Depe
+ndent Exchange Coupling, J.
+ Rajeswari, H.
+ Ibach, and C. M.
+ Schneider Phys.
+ Rev.
+ Lett.
+ 112, 127202 (http://journals.aps.org/prl/abstract/10.1103/PhysRevLett.112.127202#ful
+ltext)
 \end_layout
 
 \begin_layout Bibliography
@@ -1782,7 +1985,7 @@ Magnetism in ultrathin film structures, Vaz Bland & Lauhoff, 2008 Rep.
  Prog.
  Phys.
  71 056501 (http://iopscience.iop.org/0034-4885/71/5/056501/pdf/0034-4885_71_5_056
-501.pdf
+501.pdf)
 \end_layout
 
 \begin_layout Bibliography
