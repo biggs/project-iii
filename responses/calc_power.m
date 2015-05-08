@@ -1,7 +1,5 @@
 function p = calc_power(w, G_x, dipoles, h, he0)
 
-	%he0 = 1;
-
 
 	%calculate response matrix, M:
 	L = calc_L( w, he0, G_x, dipoles );

@@ -15,6 +15,7 @@ end
 
 % ------- calculate G_src ---------
 G_src = [];
+no_src = class_source([128;128],[0;0]);
 
 for src_i = sources
 	src_i;
