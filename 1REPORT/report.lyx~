@@ -100,9 +100,13 @@ key "stafford-elec"
  illustrating this in practice, comparing it to other techniques such as
  Ferromagnetic Resonance (FMR), and to demonstrate some of the properties
  of such systems.
- Experimental realization requires only scannable phase locked sources and
- an ability to measure absorbed power, simple requirements which make the
- method highly practicable at a range of frequencies.
+ Experimental realization requires only a static applied field, scannable
+ phase locked sources, and an ability to measure absorbed power; these are
+ simple requirements which make the method highly practicable at a range
+ of frequencies.
+ The modes may be found for a range of applied fields and mapped spatially,
+ using our knowledge of the forms of the source impressed fields, revealling
+ yet more about the system.
 \end_layout
 
 \begin_layout Section
@@ -112,10 +116,10 @@ Introduction
 \begin_layout Standard
 Magnetic properties of thin films are an active area of research both for
  their use in elucidating our understanding of magnetism and because of
- their enormous technological importance in computing
+ their enormous technological importance 
 \begin_inset CommandInset citation
 LatexCommand cite
-key "key-1"
+key "spinw"
 
 \end_inset
 
@@ -123,11 +127,10 @@ key "key-1"
 \end_layout
 
 \begin_layout Standard
-As an older example of how quickly developments in this area influence the
- technology sector, the giant magnetoresistive effect (GMR) was discovered
- in 1988 (leading to the award of the 2007 Nobel Prize in Physics) and was
- demonstrated in a hard disk drive read head by 1994 and commercialized
- shortly thereafter.
+As an example of how quickly developments in this area influence the technology
+ sector, the giant magnetoresistive effect (GMR) was discovered in 1988
+ (leading to the award of the 2007 Nobel Prize in Physics) and was demonstrated
+ in a hard disk drive read head by 1994, being commercialized shortly thereafter.
  Between the introduction of the first hard disk drive in 1956 to 2007,
  there was a 
 \begin_inset Formula $\mathrm{10^{8}}$
@@ -193,10 +196,14 @@ key "thinfilm"
 .
  They were originally studied in bulk materials but recently focus has shifted
  towards engineering microscopic band gaps to perform operations such as
- data manipulation and storage as described above 
+ data manipulation and storage as described above.
+ There is also much current research in spintronics, a field combining electrica
+l and magnetic manipulation of spins system in solid-state devices, and
+ driven by range of potential applications, such as a circularly polarised
+ spin laser 
 \begin_inset CommandInset citation
 LatexCommand cite
-key "memos"
+key "spintronics"
 
 \end_inset
 
@@ -238,11 +245,12 @@ key "rosen,kittel"
 
 \begin_layout Standard
 A recent advance is the development of processes to create magnetic nanoparticle
-s with control of sizes and shapes, leading to novel technological applications.
+s with control of sizes and shapes, with great potential technological applicati
+on.
  The determination of their normal modes and ability to control them has
- important technological implications, since read head size is fundamentally
- limited by spin-wave noise which could be reduced by suitable design choices
- 
+ important technological implications; an example is that read head size
+ is fundamentally limited by spin-wave noise, which could be reduced by
+ suitable design choices 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "nanopart"
@@ -266,7 +274,8 @@ Measurement of very small samples can be challenging due to the amount of
  material.
  A number of techniques are commonly used to investigate general magnetic
  properties, including: SQUID magnetometers, x-ray magnetic circular dichroism
- (XMCD), using the magnetoopic Kerr effect (MOKE) and other novel techniques.
+ (XMCD), using the magnetoopic Kerr effect (MOKE) and other specialist technique
+s.
  More direct investigation of the spin wave dynamics may be achieved through
  the Brillon light scattering and ferromagnetic resonance (FMR) techniques
  
@@ -283,11 +292,17 @@ key "thinfilm"
 Ferromagnetic resonance, one of the most useful contemporary techniques,
  is at microwave frequencies similar in principle to nuclear spin resonance
  (NMR).
- In a strong applied magnetic field spins precess and transverse radio frequency
- (RF) energy is absorbed dependent on the relation between precession and
- applied frequencies.
- The field strength is varied and absorbances to the small RF probe are
- measured.
+ In a strong applied magnetic field spins precess and the transmission of
+ radio frequency (RF) or x-ray energy is attenuated, dependent on the relation
+ between precession and applied frequencies.
+ The field strength is varied and attenuation is measured 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "ferro"
+
+\end_inset
+
+.
  In a ferromagnetic sample, the transverse susceptibility is large and the
  strong exchange coupling tends to suppress dipolar contributions so resonance
  lines may be quite sharp 
@@ -300,7 +315,8 @@ key "kittel"
 .
  It gives useful information about dispersion and damping but is difficult
  to apply to microscopic structures and provides little information about
- the modes responsible for absorption 
+ the modes responsible for absorption, for example their spatial forms or
+ degeneracies 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "memos"
@@ -315,9 +331,9 @@ Energy Absorption Interferometry
 \end_layout
 
 \begin_layout Standard
-Energy Absorption Interferometry (EAI) is a technique first proposed in
- the context of electric dipoles and is a general technique for studying
- modes based on the physics of coherent energy absorption 
+Energy Absorption Interferometry (EAI) was first proposed in the context
+ of electric dipoles and is a general technique for studying modes based
+ on the physics of coherent energy absorption 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "stafford-elec"
@@ -325,34 +341,30 @@ key "stafford-elec"
 \end_inset
 
 .
+ It is a generalisation of holography in magnetic systems.
 \end_layout
 
 \begin_layout Standard
 The general setup is similar to FMR, with the structure under test placed
- in a large static magnetic field, but rather than one source, a pair of
- phase-locked time-varying sources - say magnetic dipoles - are used to
- probe the system.
- The total power absorbed is measured as a function of the phase difference
- between the sources, giving a fringe.
- The complex visibility of this fringe is measured for pairs of source locations
-, using which the technique is able to reconstruct the dynamical modes and
- their relative responsivities.
- Furthermore, the technique may be repeated for a range of applied field
- strengths, yielding a huge amount of useful information about the system.
- Degenerate excitation may be found, giving information about system symmetries.
+ in a large static magnetic field.
+ It differs in that rather than one source, instead a pair of phase-locked
+ time-varying sources - say magnetic dipoles - are used to probe the system,
+ and the total power absorbed by the is measured.
+ This is dependent on the phase difference between the sources, giving a
+ fringe in power absorption.
+ The complex visibility of this fringe is measured for pairs of source locations.
 \end_layout
 
 \begin_layout Standard
-One fundamental advantage of the technique is that only the total absorbed
- power needs to be measured, making this applicable to a large number of
- systems, like the previously demonstrated electric dipoles 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "stafford-elec"
-
-\end_inset
-
-.
+From this, the technique is able to reconstruct the dynamical modes and
+ their relative responsivities.
+ This can be done for any given source frequency and applied field, and
+ may further be repeated for a range of applied field strengths.
+ Degenerate excitations may be seperated, giving information about system
+ symmetries, and the spatial forms of the modes may be mapped using knowledge
+ of the impressed field forms.
+ We may thus yield a huge amount of useful information about the system.
+ 
 \end_layout
 
 \begin_layout Subsection
@@ -360,15 +372,30 @@ Experimental Realization
 \end_layout
 
 \begin_layout Standard
-EAI may be implemented in a number of ways.
- A illustrative example is shown in the figure.
- A thin sample is supported by a thermally isolated Si membrane, and bolometer
+The simplicity of the technique, requiring only phase-locked sources and
+ a measurement of the total absorbed power absorbtion, makes it realizable
+ in a variety of experimetal setups.
+ It is even applicable to different situations entirely, such as the already
+ demonstrated electric dipoles.
+ Here we will describe one possible implementation.
+\end_layout
+
+\begin_layout Standard
+A thin sample is supported by a thermally isolated Si membrane, and bolometer
  technology is used to very sensitively measure the absorbed power.
  This is placed in a large static magnetic field from a DC solenoid and
  illuminated by a pair of phase-locked magnetic sources which are rotated
  around the periphery, exciting spin waves.
  In practice these sources might simply be slightly offset in frequency
- and the oscillation of power absorption measured to find the phase.
+ and the oscillation of power absorption measured to find the phase (already
+ demonstrated in the electronic case
+\begin_inset CommandInset citation
+LatexCommand cite
+key "key-11"
+
+\end_inset
+
+).
 \end_layout
 
 \begin_layout Standard
@@ -414,14 +441,19 @@ Schematic of a possible experimental apparatus for performing EAI.
 \end_layout
 
 \begin_layout Section
-Theory 
+Theory
+\end_layout
+
+\begin_layout Standard
+The theory of EAI and its application to magnetic dipoles was initially
+ laid out by Stafford Withington 
 \begin_inset CommandInset citation
 LatexCommand cite
-key "memos"
+key "memos,stafford-elec"
 
 \end_inset
 
-
+.
 \end_layout
 
 \begin_layout Subsection
@@ -429,7 +461,7 @@ Spin Waves
 \end_layout
 
 \begin_layout Standard
-We shall model the system as a discrete system of magnetic dipoles.
+The system is modelled as a discrete system of magnetic dipoles.
  This may be done for any system using the discrete dipole approximation
  (DDA) - the equation then represents averages over finite macroscopic regions.
  A single dipole with magnetic dipole moment 
@@ -439,7 +471,7 @@ We shall model the system as a discrete system of magnetic dipoles.
  will evolve according the Landau-Lifshitz-Gilbert equation:
 \begin_inset Formula 
 \begin{equation}
-\frac{d{\bf {m_{j}}}}{dt}=-\gamma_{j}\mu_{0}{\bf {m_{j}}}\times{\bf {H}}_{j}^{tot}+\frac{\alpha_{j}}{|{\bf {m_{j}}}|}({\bf {m_{j}}}\times\frac{{d{\bf {m_{j}}}}}{dt})
+\frac{d{\bf {m_{j}}}}{dt}=-\gamma_{j}\mu_{0}{\bf {m_{j}}}\times{\bf {H}}_{j}^{tot}+\frac{\alpha_{j}}{|{\bf {m_{j}}}|}({\bf {m_{j}}}\times\frac{{d{\bf {m_{j}}}}}{dt})\label{eq:llg}
 \end{equation}
 
 \end_inset
@@ -464,7 +496,8 @@ ding to opposite rotation directions) and
  is a phenomenological damping coefficient (in FMR, for the transverse component
 s of the dynamic part of the magnetization).
  This equation could be generalized to a Bloch equation with different longitudi
-nal and transverse dampings but this will not be done to simplify the analysis.
+nal and transverse dampings, but this will not be done, simplifying the
+ analysis.
 \end_layout
 
 \begin_layout Standard
@@ -472,17 +505,24 @@ We move to the steady state by writing
 \begin_inset Formula ${\bf H}_{j}^{tot}={\bf H}_{j}^{tot\,(0)}+{\bf H}_{j}^{tot\,(t)}$
 \end_inset
 
- which represent the non-time dependent and time dependent terms, provided
+, representing the non-time dependent and time dependent terms, provided
  by the large static field and the smaller RF sources respectively.
  Thus when only the static field is present, the system equilibrates into
  a state 
 \begin_inset Formula $\mathrm{{\bf m_{j}}}^{(0)}$
 \end_inset
 
- with no torque on dipoles (from LLG).
- Generally, the dipoles can form non-aligned domains but we assume they
+ with no torque on the dipoles (from 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:llg"
+
+\end_inset
+
+).
+ Generally, the dipoles can form non-aligned domains, but we assume they
  are in the saturated state: all totally aligned with the static field,
- so 
+ so that 
 \begin_inset Formula $\mathrm{{\bf m_{j}}}^{(0)}=m^{s}\hat{{\bf k}}$
 \end_inset
 
@@ -492,8 +532,8 @@ We move to the steady state by writing
 
 .
  We also make the vital assumption that in the steady state, all of the
- absorbed (or indeed extracted) power is transferred from substrate (physically,
- its phonon system).
+ absorbed (or indeed extracted) power is transferred to the substrate (physicall
+y, its phonon system).
 \end_layout
 
 \begin_layout Standard
@@ -519,8 +559,8 @@ We use periodic RF sources so that
 \begin_inset Formula ${\bf m_{j}}\cdot{\bf \hat{k}}\approx{\bf m_{j}}^{(0)}$
 \end_inset
 
-, the static component is much greater than the parallel dynamical component)
- we get:
+, that the static component is much greater than the parallel dynamical
+ component) we get:
 \end_layout
 
 \begin_layout Standard
@@ -539,7 +579,7 @@ Non-Interacting Case
 \end_layout
 
 \begin_layout Standard
-We may invert the above equation to write the susceptibility of a system
+Inverting the above equation we can write the susceptibility of a system
  of non-interacting, precessing dipoles with position vectors 
 \begin_inset Formula ${\bf r}_{0j}$
 \end_inset
@@ -566,11 +606,16 @@ i & \omega_{0}/\omega
 
 \end_inset
 
- where we have used dyadics and 
+ using dyadics.
+ 
 \begin_inset Formula $S_{j}$
 \end_inset
 
- is the matrix form (see appendix for detail).
+ is the matrix form of 
+\begin_inset Formula $\overline{\overline{\boldsymbol{{\bf S}}}}_{j}$
+\end_inset
+
+ (see appendix for detail).
  The 
 \begin_inset Formula ${\bf m}_{j}^{(1)}$
 \end_inset
@@ -584,16 +629,17 @@ i & \omega_{0}/\omega
 \begin_inset Formula $\omega_{0j}=\gamma_{j}\mu_{0}H_{j}^{(0)}$
 \end_inset
 
- and the damping rate is 
+, and the damping rate is 
 \begin_inset Formula $\Gamma_{j}=2\alpha_{j}\omega_{0j}$
 \end_inset
 
-, and we have assumed low loss (small 
+.
+ We have assumed low loss (small 
 \begin_inset Formula $\alpha_{j}$
 \end_inset
 
 ).
- Now spatial dipole moment is 
+ Now the spatial dipole moment is 
 \begin_inset Formula ${\bf M}^{(1)}({\bf r})=\overline{\overline{\chi}}_{L}({\bf r})\cdot{\bf H}^{ext(1)}({\bf r})$
 \end_inset
 
@@ -645,9 +691,9 @@ We can write
 \begin_inset Formula ${\bf H}_{j}^{tot}={\bf H}_{j}^{ext}+{\bf H}_{j}^{xch}+{\bf H}_{j}^{dip}$
 \end_inset
 
- where the terms represent the applied external field on the system, the
- effective field from exchange interactions between dipoles, and the scattered
- field from the other dipoles.
+, where the terms respectively represent the applied external field on the
+ system, the effective field from exchange interactions between dipoles,
+ and the scattered field from the other dipoles.
 \end_layout
 
 \begin_layout Standard
@@ -671,7 +717,8 @@ The dipole scattering term is:
 
 \end_inset
 
- using the non-retarded magnetostatic greens dyadic (reference????):
+ using the non-retarded magnetostatic greens dyadic (retardation could also
+ be easily included, but we will not do so here):
 \begin_inset Formula 
 \begin{equation}
 \overline{\overline{{\bf G}}}({\bf r},{\bf r'})=\frac{1}{R^{3}}\left(3\frac{{\bf RR}}{R^{2}}-\overline{\overline{{\bf I}}}\right),\quad{\bf R}={\bf r}-{\bf r'},\quad R=|{\bf R}|\label{eq:magnetostatic}
@@ -773,7 +820,7 @@ We see from the numerator that the power is always positive for rotation
 \end_inset
 
 .
- However, for the opposite direction rotations, the power is zero at 
+ For the opposite direction rotations, the power is zero at 
 \begin_inset Formula $\omega=\omega_{0}$
 \end_inset
 
@@ -782,19 +829,14 @@ We see from the numerator that the power is always positive for rotation
 \end_inset
 
 , taking energy out of the dipole.
- Physically the steady state case makes perfect sense for the natural precession
- rotation direction rotation - however here our assumption of steady state
- is called into question - the negative power modes would be quickly damped
- by the applied field removing the energy in an experiment.
-\end_layout
-
-\begin_layout Standard
-In practice, there is nothing wrong with this - modes fall into two separable
+ Physically the natural precession rotation direction rotation would dominate
+ since the negative power modes would be quickly damped by the applied field.
+ In fact, even in a multi-dipole interacting case, modes fall into two separable
  subsets with opposite rotation directions - there are no mixed modes.
- The negative power absorption modes would however be much more difficult
- to detect experimentally due to this rapid damping effect, but we are not
- generally interested in them either.
- We focus on the positive absorption, natural precession direction modes.
+ In practice, this rapid relaxation of the opposite rotation modes makes
+ them more difficult to resolve with EAI.
+ However, we are not generally interested in them, so we will focus on the
+ positive absorption, natural precession direction modes.
 \end_layout
 
 \begin_layout Subsection
@@ -823,13 +865,14 @@ After a number of steps from the above forms for the power we may arrive
 \begin_inset Formula $\overline{\overline{\boldsymbol{\chi}}}$
 \end_inset
 
- (this makes the power real and discards the non-absorbing hermitan part
- of 
+ (only the antihermitian part of 
 \begin_inset Formula $\overline{\overline{\boldsymbol{\chi}}}$
 \end_inset
 
-); and the magnetic field correlation dyadic, an expectation value across
- an ensemble of systems (not required for coherent sources), is:
+ is responsible for power absorption; the hermitian part is reactive and
+ causes power scattering).
+ The magnetic field correlation dyadic, an expectation value across an ensemble
+ of systems (not required for coherent sources), is:
 \begin_inset Formula 
 \begin{equation}
 \overline{\overline{{\bf C}}}({\bf r},{\bf r'})=<{\bf H}({\bf r}){\bf H}^{*}({\bf r'})>\label{eq:calcC}
@@ -841,10 +884,18 @@ After a number of steps from the above forms for the power we may arrive
 \end_layout
 
 \begin_layout Standard
-This clearly has the form of an inner product in the abstract vector space
- of dyadic fields.
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:dyadicproject"
+
+\end_inset
+
+ has the form of an inner product in the abstract vector space of dyadic
+ fields.
  The power absorbed is the projection of the magnetic field correlation
- dyadic onto the susceptibility dyadic.
+ dyadic onto the susceptibility dyadic; in other words it describes the
+ orthogonal projection of state of coherence of the applied field onto the
+ state to which the dipoles are most sensitive.
 \end_layout
 
 \begin_layout Subsubsection*
@@ -961,12 +1012,13 @@ Thus
 \end_layout
 
 \begin_layout Subsubsection*
-Scattering
+Scattering by Dipoles
 \end_layout
 
 \begin_layout Standard
-In the scattered case the total field is a linear function of the impressed
- field and can be written as:
+When we include dipole scattering, the total field at each dipole is a linear
+ function of the unscattered, impressed field.
+ It can be written as:
 \begin_inset Formula 
 \[
 {\bf H}({\bf r})=\intop_{V}\overline{\overline{{\bf G}}}({\bf r},{\bf r'})\cdot{\bf H}^{ext}({\bf r'})d^{3}{\bf r'}
@@ -974,12 +1026,11 @@ In the scattered case the total field is a linear function of the impressed
 
 \end_inset
 
- were 
+ where 
 \begin_inset Formula $\overline{\overline{{\bf G}}}({\bf r},{\bf r'})$
 \end_inset
 
- is the scattering operator which may be calculated from the magnetostatic
- Green's function.
+ is the scattering operator, calculated from the magnetostatic Green's function.
  Since the integral is only over the sample volume, we may regard 
 \begin_inset Formula $\overline{\overline{{\bf G}}}({\bf r},{\bf r'})$
 \end_inset
@@ -1010,7 +1061,8 @@ Thus the scattering limits the amount of spatial information we may obtain
 \begin_inset Formula $\overline{\overline{\boldsymbol{\chi}}}^{R}({\bf s},{\bf s'})$
 \end_inset
 
-.
+, since it reduces our ability to map the total field directly onto the
+ dipole locations.
 \end_layout
 
 \begin_layout Subsection
@@ -1133,7 +1185,7 @@ We may look more closely at exactly where
 \begin_inset Formula $\mathrm{m}\in\mathbb{C}^{2J}$
 \end_inset
 
- containing the transverse components of the dipole moments.
+, containing the transverse components of the dipole moments.
  If exchange interactions are present then:
 \begin_inset Formula 
 \begin{equation}
@@ -1154,7 +1206,7 @@ reference "eq:exchange"
 \end_inset
 
 ) and 
-\begin_inset Formula $\chi$
+\begin_inset Formula $\chi_{L}$
 \end_inset
 
  is simply the local susceptibility.
@@ -1229,7 +1281,21 @@ If the matrix
 \end_inset
 
  associated with particular possible sources.
- If these impressed fields span the absorption modes, the response matrix
+ These sources may be near-field point sources, in which case the Green's
+ function is that of 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "eq:magnetostatic"
+
+\end_inset
+
+, or we might include retardation and move them further away to get plane
+ wave sources (resulting in a loss of some spatial information but generally
+ making it easier to span the modes).
+\end_layout
+
+\begin_layout Standard
+If these impressed fields span the absorption modes, the response matrix
  can be written in terms of the duals:
 \begin_inset Formula 
 \begin{equation}
@@ -1243,6 +1309,11 @@ If the matrix
 \end_inset
 
  gives the response in the basis of the sources.
+ Its dimension must be greater than or equal to that of 
+\begin_inset Formula $\mathrm{L}$
+\end_inset
+
+ if the response is to be completely described.
 \end_layout
 
 \begin_layout Standard
@@ -1277,7 +1348,7 @@ P_{nm}=a_{nn}+a_{mm}+a_{nm}e^{i\Delta\phi}+a_{mn}e^{-i\Delta\phi}\label{eq:power
 \end_layout
 
 \begin_layout Subsubsection*
-Deconvolution
+Spatial Mapping
 \end_layout
 
 \begin_layout Standard
@@ -1295,10 +1366,15 @@ The matrix
 
 , and finally the greens function taking the field at the sources to the
  dipoles.
- Generally only the final step may be deconvolved, as if we know the source
- properties we may calculate the forms of the impressed fields and invert
- them (we are allowed to do this because if we do not have fundamental dipole
- locations then we use DDA which gives them to us).
+ This is already highly useful.
+\end_layout
+
+\begin_layout Standard
+We may however deconvolve the final step to find information about the spatial
+ distributions of the dipoles, as if we know the source properties we may
+ calculate the forms of the impressed fields and invert them (we are allowed
+ to do this because if we do not have fundamental dipole locations then
+ we use DDA which gives them to us).
 \end_layout
 
 \begin_layout Standard
@@ -1307,7 +1383,7 @@ The dual vectors are defined by
 \end_inset
 
 , but inversion is not possible if J is not equal to N.
- We use the SVD pseudo-inverse, defined by:
+ We thus use the SVD pseudo-inverse, defined by:
 \end_layout
 
 \begin_layout Standard
@@ -1380,7 +1456,7 @@ Henceforth, all calculations were done in the basis with the fields or moments
 \begin_inset Formula ${\bf H}^{ext(0)}=1$
 \end_inset
 
- unless otherwise stated, and we also set our units such that 
+ unless otherwise stated, and our units are set such that 
 \begin_inset Formula $\mu_{0}=1$
 \end_inset
 
@@ -1524,7 +1600,8 @@ Next, to reconstruct the responses, we:
 
 \begin_layout Enumerate
 Assemble a set of sources that will be used for the testing.
- They may be laid out in a line or a circle or some other shape.
+ They may be point sources laid out in a line or a circle, or plane wave
+ sources.
  For this set assemble the matrix 
 \begin_inset Formula $\mathrm{H^{ext}}$
 \end_inset
@@ -1581,8 +1658,8 @@ Calculate the reconstructed response matrix
 \end_layout
 
 \begin_layout Standard
-We can compare the reconstructed matrix with the one used to calculate the
- response in order to quantify how well we have reconstructed the modes.
+The reconstructed matrix can be compared with the one used to calculate
+ the response in order to quantify how well the modes have been reconstructed.
 \end_layout
 
 \begin_layout Subsection
@@ -1938,6 +2015,10 @@ Matrix representations:
 
 \end_layout
 
+\begin_layout Standard
+Dyadics representation???
+\end_layout
+
 \begin_layout Subsection*
 A Typical Piece of Code
 \end_layout
@@ -2027,12 +2108,48 @@ Kittel, Introduction to Solid State Physics, 7th Edition
 \begin_layout Bibliography
 \begin_inset CommandInset bibitem
 LatexCommand bibitem
+key "spintronics"
+
+\end_inset
+
+Spintronics: Fundamentals and applications, Zutíc Fabian Sarma.
+ (http://arxiv.org/pdf/cond-mat/0405528.pdf
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
 key "stafford-elec"
 
 \end_inset
 
 Probing the dynamical behaviour of surface dipoles through energy-absorption
  interferometry, Withington & Thomas, Physical Review A 86, 043835 (2012)
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-11"
+
+\end_inset
+
+Experimental Demonstration of an Interferometric Technique for Characterizing
+ the Full Optical Behavior of Multi-Mode Power Detectors, C.N.
+ Thomas, Terahertz Science and Technology, IEEE Transactions on (Volume:2
+ , Issue: 1 ) 
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "ferro"
+
+\end_inset
+
+Longitudinal Detection of Ferromagnetic Resonance using X-ray Transmission
+ Measurements, Boero et al, (http://infoscience.epfl.ch/record/147825/files/2009_B
+oero_RSI.pdf)
 \end_layout
 
 \end_body
