@@ -1,4 +1,4 @@
-addpath('define_dipoles','fringes','animations','classes','responses','applied_field','eai') %add stuff to path
+addpath('define_dipoles','fringes','animations','classes','responses','field','eai') %add stuff to path
 
 %----------DEFINE_DIPOLES our system-----------
 m_s = 1;
@@ -17,9 +17,8 @@ G_x = calc_nn_gx(no_dipoles,exchange_coupling,endcoupling);
 
 
 %---------run other scripts to create plots------------
-L = calc_L(1.2,1,G_x,dipoles);
-
-V = plot_eigenvalues(L, G_x, dipoles, [0,2], [3,4])  % plot the eigenvalues of response matrix
+L = calc_L(1.2,1,G_x,dipoles)
+V = plot_eigenvalues(L, G_x, dipoles, [0,2], [1,4])  % plot the eigenvalues of response matrix
 
 
 
