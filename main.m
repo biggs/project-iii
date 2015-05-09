@@ -5,8 +5,8 @@ m_s = 1;
 small_gamma = 1;
 alpha = 1/32;
 
-no_dipoles = 2;
-exchange_coupling = 0.4;
+no_dipoles = 5;
+exchange_coupling = 0.25;
 endcoupling = true;
 
 % create a system with these dipoles in a circle (equi) or line (lin)
@@ -21,7 +21,7 @@ L = calc_L(1.2,1,G_x,dipoles)
 V = plot_eigenvalues(L, G_x, dipoles, [0,2], [1,4])  % plot the eigenvalues of response matrix
 
 
-
+%plot_simple_responses;
 
 
 
@@ -30,12 +30,12 @@ V = plot_eigenvalues(L, G_x, dipoles, [0,2], [1,4])  % plot the eigenvalues of r
 %------------EAI-------------
 w = 0.7;
 % define source positions
-sx = @(x) class_source([x;2], [1;1]);
+sx = @(x) class_source([x;2], [1;i]);
 sources = [ sx(0), sx(0.5), sx(1), sx(1.5), sx(2), sx(2.5) ];
 
 %calculate various source related things
 G_src = calc_G_src( dipoles, sources );
-M_src = diag([1 1 1 1]);
+M_src = diag([1 1 1 1 1 1]);
 H_ext = M_src * G_src
 
 
