@@ -6,7 +6,7 @@ small_gamma = 1;
 alpha = 1/32;
 
 no_dipoles = 5;
-exchange_coupling = 0.25;
+exchange_coupling = 0.2;
 endcoupling = true;
 
 % create a system with these dipoles in a circle (equi) or line (lin)
@@ -17,18 +17,18 @@ G_x = calc_nn_gx(no_dipoles,exchange_coupling,endcoupling);
 
 
 %---------run other scripts to create plots------------
-L = calc_L(1.2,1,G_x,dipoles)
-V = plot_eigenvalues(L, G_x, dipoles, [0,2], [1,4])  % plot the eigenvalues of response matrix
+w=1.1;
+%L = calc_L(1.2,1,G_x,dipoles)
+%V = plot_eigenvalues(L, G_x, dipoles, [0,2], [1,4])  % plot the eigenvalues of response matrix
 
 
 %plot_simple_responses;
 
+fplot (@(theta) calc_visibility( w, G_x, dipoles, class_source([2;0], [1;0]), class_source(2*[cos(theta);sin(theta)], [1;0]) ),   [0,2*pi])
 
 
 
-%{
 %------------EAI-------------
-w = 0.7;
 % define source positions
 sx = @(x) class_source([x;2], [1;i]);
 sources = [ sx(0), sx(0.5), sx(1), sx(1.5), sx(2), sx(2.5) ];
