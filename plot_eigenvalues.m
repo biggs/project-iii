@@ -11,7 +11,7 @@ function [ V ] = plot_eigenvalues( L, G_x, dipoles, range, to_plot )
 	peak = [];
 
 	for h_no = to_plot(1):to_plot(2)
-		h_plot = (V(:,h_no)); 
+		h_plot = (V(:,h_no))
 		fplot(@(w) calc_power(w,G_x,dipoles,h_plot,1),  range);
 		peak = [peak, fminbnd(@(w) - calc_power(w,G_x,dipoles,h_plot,1), 0,2)];
 	end

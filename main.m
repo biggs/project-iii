@@ -17,39 +17,40 @@ G_x = calc_nn_gx(no_dipoles,exchange_coupling,endcoupling);
 
 
 %---------run other scripts to create plots------------
-w=1.1;
-%L = calc_L(1.2,1,G_x,dipoles)
-%V = plot_eigenvalues(L, G_x, dipoles, [0,2], [1,4])  % plot the eigenvalues of response matrix
-
+w=1.2;
+L = calc_L(1.2,1,G_x,dipoles)
+V = plot_eigenvalues(L, G_x, dipoles, [0,2], [1,6])  % plot the eigenvalues of response matrix
+px = @(x) plot(1:5, wrap2pi(angle(V(1:2:end,x)) - angle(V(1,x))));
 
 %plot_simple_responses;
 
-fplot (@(theta) calc_visibility( w, G_x, dipoles, class_source([2;0], [1;0]), class_source(2*[cos(theta);sin(theta)], [1;0]) ),   [0,2*pi])
+%fplot (@(theta) calc_visibility( w, G_x, dipoles, class_source([2;0], [1;0]), class_source(2*[cos(theta);sin(theta)], [1;0]) ),   [0,2*pi])
 
 
+%{
 
 %------------EAI-------------
 % define source positions
-sx = @(x) class_source([x;2], [1;i]);
-sources = [ sx(0), sx(0.5), sx(1), sx(1.5), sx(2), sx(2.5) ];
+sx = @(theta) class_source(2*[cos(theta);sin(theta)], [1;0]);
+sources = [ sx(0), sx(0.5), sx(1), sx(1.5) ];
 
 %calculate various source related things
 G_src = calc_G_src( dipoles, sources );
-M_src = diag([1 1 1 1 1 1]);
+M_src = diag([1 1 1 1]);
 H_ext = M_src * G_src
 
 
 [U,S,V] = svd(H_ext);
 s = diag(S); % make a vect of diagonal S vals
 k = sum(s> 1e-4); % number of non-zero s entries (always first k). Conditioning of s controls reconstruction
-H_ext_dual= (U(:, 1: k)* diag(1./ s(1: k))* V(:, 1: k)');
+H_ext_dual= (U(:, 1: k)* diag(1./ s(1: k))* V(:, 1: k)')
 
 H_ext_dual*H_ext'
 
 %calc A. Uses only power measurements.
-A = calc_A_from_p(w,dipoles,sources,G_x);
+A = calc_A_from_p(w,dipoles,sources,G_x)
 
-L_recon = H_ext_dual*A*H_ext_dual';
+L_recon = H_ext_dual*A*H_ext_dual'
 
 
 %quantify how well L has been reconstructed
