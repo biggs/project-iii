@@ -3,7 +3,7 @@ function [ fringe ] = calc_fringe( w, G_x, dipoles, source_a, source_b )
 
 	%define below to clean up code
 	no_src = class_source([128;128],[0;0]);
-	p_sources = @(sources,phase) calc_power(w, G_x, dipoles, calc_ss_h(calc_he(dipoles,sources,phase)),1);
+	p_sources = @(sources,phase) calc_power(w, G_x, dipoles, (calc_he(dipoles,sources,phase)),1);
 
 
 	%power from various source configs
